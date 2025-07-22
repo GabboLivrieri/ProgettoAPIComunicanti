@@ -1,8 +1,0 @@
-com\example\post_service\controller\PostController.class
-com\example\post_service\exception\GlobalExceptionHandler.class
-com\example\post_service\repository\PostRepository.class
-com\example\post_service\PostServiceApplication.class
-com\example\post_service\service\PostService.class
-com\example\post_service\exception\ErrorResponse.class
-com\example\post_service\entity\PostEntity.class
-com\example\post_service\exception\PostNotFoundException.class
