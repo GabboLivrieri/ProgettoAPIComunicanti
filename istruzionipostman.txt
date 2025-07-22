@@ -1,0 +1,53 @@
+🟦 USER_SERVICE (porta 8081)
+1. Crea utente
+POST http://localhost:8081/users
+Body (JSON):
+
+{
+  "name": "Mario Rossi",
+  "email": "mario@example.com"
+}
+2. Ottieni tutti gli utenti
+GET http://localhost:8081/users
+
+3. Ottieni utente per ID
+GET http://localhost:8081/users/1
+
+4. Aggiorna utente (PATCH)
+PATCH http://localhost:8081/users/1
+Body (JSON):
+{
+  "email": "nuovaemail@example.com"
+}
+5. Elimina utente
+DELETE http://localhost:8081/users/1
+
+🟨 POST_SERVICE (porta 8082)
+6. Crea post
+POST http://localhost:8082/posts
+Body (JSON):
+
+{
+  "userId": 1,
+  "content": "Questo è un post di test"
+}
+7. Ottieni tutti i post di un utente
+GET http://localhost:8082/posts/user/1
+
+8. Ottieni post per ID
+GET http://localhost:8082/posts/1
+
+9. Ottieni utente associato a un post (bidirezionale!)
+GET http://localhost:8082/posts/1/user
+
+10. Aggiorna post (PATCH)
+PATCH http://localhost:8082/posts/1
+Body (JSON):
+
+{
+  "content": "Post aggiornato",
+  "userId": 1
+}
+11. Elimina post
+DELETE http://localhost:8082/posts/1
+
