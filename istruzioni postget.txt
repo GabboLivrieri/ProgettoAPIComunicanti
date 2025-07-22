@@ -1,0 +1,24 @@
+CREAZIONE UTENTE
+POST http://localhost:8081/users
+ BODY 
+{
+  "name": "Ernesto Rossi",
+  "email": "Ernesto@example.com"
+}
+
+
+CREAZIONE POST
+http://localhost:8082/posts
+ BODY 
+{
+  "content": "Hello world!",
+  "userId": 2
+  
+}
+
+
+GET DEI POST IN BASE ALL'ID
+http://localhost:8081/users/2/posts
+
+GET DEGLI UTENTI
+http://localhost:8081/users
